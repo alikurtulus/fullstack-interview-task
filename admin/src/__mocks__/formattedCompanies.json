@@ -1,0 +1,9 @@
+[
+  {
+    "userId": "1",
+    "firstName": "Billy",
+    "lastName": "Bob",
+    "date": "2020-01-01",
+    "holding": [ { "name": "The Small Investment Company", "value": 1400 } ]
+  }
+]

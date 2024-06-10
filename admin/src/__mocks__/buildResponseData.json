@@ -1,0 +1,26 @@
+[
+  {
+    "userId": "1",
+    "firstName": "Billy",
+    "lastName": "Bob",
+    "date": "2020-01-01",
+    "holding": "The Small Investment Company",
+    "value": 1400
+  },
+  {
+    "userId": "2",
+    "firstName": "Sheila",
+    "lastName": "Aussie",
+    "date": "2020-01-01",
+    "holding": "The Big Investment Company",
+    "value": 10000
+  },
+  {
+    "userId": "2",
+    "firstName": "Sheila",
+    "lastName": "Aussie",
+    "date": "2020-01-01",
+    "holding": "The Small Investment Company",
+    "value": 10000
+  }
+]
