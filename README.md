@@ -41,8 +41,22 @@ We're interested in how you break down the work and build your solution in a cle
 - How to run any additional scripts or tests you may have added
 - Relating to the task please add answers to the following questions;
     1. How might you make this service more secure?
+    - Using authentication and authorization methods. Authentication checks user identity. This will prevent any unidentified user attacks.
+    Authorization grants access rights to a user or machine. Authorisation logic to ensure that only authorized users can access the admin service and its functionalities.
+    - Using TLS or MTLS. They help build a network where every interaction between services is secure.
+    - Using monitoring tools. This will provide a clearer view of the system and help you locate security issues faster.
+    - Using Encrypt and protect secrets keys. Environment Variables should not be exposed within the code. We can use AWS Secret Manager or Github Secrets to protect our secret keys.
     2. How would you make this solution scale to millions of records?
+    -  Use a database to store the records so that they can be quickly retrieved in a single query.
+    - Cache the data retrieved frequently to reduce database reads and operational time and costs.
+    - Use Load balancer for microservices aims to distribute incoming network traffic across multiple instances of a service to ensure no single instance is overwhelmed with too much traffic.
+
     3. What else would you have liked to improve given more time?
+    - Investigate Ramda.js and implement this task with Ramda.js
+    - Write up through documentation on the API usage.
+    - Better error handling to give the clear response for the user. 
+    - Add more tests for failing scenarios.
+
 
 
 On completion email a link to your repository to your contact at Moneyhub and ensure it is publicly accessible.
@@ -65,6 +79,14 @@ The services will try to use ports 8081, 8082 and 8083
 
 Use Postman or any API tool of you choice to trigger your endpoints (this is how we will test your new route).
 
+### Testing
+
+Unit tests have been written for the new utility functions in Jest.
+
+To run the unit tests, run
+
+`npm test`
+
 ### Existing routes
 We have provided a series of routes
 
@@ -79,3 +101,5 @@ Financial Companies - localhost:8082
 
 Admin - localhost:8083
 - `/investments/:id` get an investment record by id
+- `/generate-csv`  generates a CSV file of all user investment holdings
+
